@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ColumnItem > should be match with snapshot 1`] = `
+<div>
+  <div
+    class="sc-beqWaB gICPwG"
+  >
+    <div
+      class="wrap-img"
+    >
+      <div
+        class="date-time"
+      >
+        DD/MM/YYYY HH:mm
+      </div>
+    </div>
+    <div
+      class="title"
+      title="title"
+    >
+      title
+    </div>
+    <div
+      class="tags"
+    >
+      <div
+        class="tag"
+      >
+        #
+        tag1
+      </div>
+      <div
+        class="tag"
+      >
+        #
+        tag2
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BtnMoveToEntry > should be match with snapshot 1`] = `
+<div>
+  <div
+    class="sc-beqWaB jlGERk"
+  >
+    <img
+      alt="entry"
+      loading="lazy"
+    />
+    <div
+      class="wrap-content"
+    >
+      <div
+        class="title"
+      />
+      <div
+        class="desc"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BtnLoadMore > should be match with snapshot 1`] = `
+<div>
+  <button
+    class="sc-beqWaB exAsPU"
+  >
+    記録をもっと見る
+  </button>
+</div>
+`;
