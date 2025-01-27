@@ -14,7 +14,7 @@ const MyDiary = () => {
         dispatch(addMyDiary())
     }, []);
 
-    const _handleLoadMore = () => {
+    const handleLoadMore = () => {
         dispatch(appendMyDiary())
     }
 
@@ -28,7 +28,7 @@ const MyDiary = () => {
                     ))
                 }
             </div>
-            <BtnLoadMore onClick={_handleLoadMore} />
+            <BtnLoadMore onClick={handleLoadMore} />
         </WrapMyDiary>
     )
 }

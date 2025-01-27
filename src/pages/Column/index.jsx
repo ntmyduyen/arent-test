@@ -14,7 +14,7 @@ const Column = () => {
         dispatch(addColumn())
     }, []);
 
-    const _handleLoadMore = () => {
+    const handleLoadMore = () => {
         dispatch(appendColumn())
     }
 
@@ -28,7 +28,7 @@ const Column = () => {
                     ))
                 }
             </div>
-            <BtnLoadMore onClick={_handleLoadMore} />
+            <BtnLoadMore onClick={handleLoadMore} />
         </WrapColumn>
     )
 }

@@ -5,12 +5,12 @@ import BH from "./index.styles"
 const BtnHex = ({ title, type, Icon }) => {
     const dispatch = useDispatch()
 
-    const _handleFilter = () => {
+    const handleFilter = () => {
         dispatch(getMealHistoryByType(type))
     }
 
     return (
-        <BH.Wrap onClick={_handleFilter} data-testid="btn-hex">
+        <BH.Wrap onClick={handleFilter} data-testid="btn-hex">
             <Icon />
             <div className="title">{title}</div>
         </BH.Wrap>

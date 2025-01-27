@@ -9,7 +9,7 @@ const MenuMobile = () => {
     const ref = useRef(null)
     const [isExpands, setIsExpands] = useState(false);
 
-    const _handleClickBtn = () => {
+    const handleClickBtn = () => {
         setIsExpands(pre => !pre)
     }
 
@@ -21,7 +21,7 @@ const MenuMobile = () => {
         <WrapMenuMobile ref={ref} data-testid="menu-mobile">
             <div
                 className={getClass("btn-hamburger", isExpands && "open")}
-                onClick={_handleClickBtn}
+                onClick={handleClickBtn}
                 data-testid="btn-hamburger">
                 <span></span>
                 <span></span>
@@ -34,7 +34,7 @@ const MenuMobile = () => {
                         menuMobile.map(({ key, name, path }, index) => (
                             <Fragment key={key}>
                                 {index !== 0 && <hr />}
-                                <NavLink to={path} onClick={_handleClickBtn}>{name}</NavLink>
+                                <NavLink to={path} onClick={handleClickBtn}>{name}</NavLink>
                             </Fragment>
                         ))
                     }

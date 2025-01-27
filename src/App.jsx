@@ -8,11 +8,11 @@ import { Outlet } from "react-router-dom"
 const App = () => {
   const id = useId()
 
-  const _handleRender= (...props) => {
+  const handleRender= (...props) => {
     console.log(props)
   }
 
-  return <Profiler id={id} onRender={_handleRender}>
+  return <Profiler id={id} onRender={handleRender}>
     <Header />
     <Outlet />
     <Footer />

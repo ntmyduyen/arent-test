@@ -30,7 +30,7 @@ const GraphFilter = () => {
         return data
     }, [filterType, datasets])
 
-    const _handleFilter = (type) => {
+    const handleFilter = (type) => {
         dispatch(showBodyRecord(type))
     }
 
@@ -47,7 +47,7 @@ const GraphFilter = () => {
             </div>
             <div className="btn-filter">
                 {filterBodyRecord.map(({ type, text }) => (
-                    <div className={getClass("filter", filterType === type && "active")} key={type} onClick={() => _handleFilter(type)}>{text}</div>
+                    <div className={getClass("filter", filterType === type && "active")} key={type} onClick={() => handleFilter(type)}>{text}</div>
                 ))}
             </div>
         </WrapGraphFilter>

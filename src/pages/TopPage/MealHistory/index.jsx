@@ -13,7 +13,7 @@ const MealHistory = () => {
         dispatch(addListMealHistory())
     }, []);
 
-    const _handleLoadMore = () => {
+    const handleLoadMore = () => {
         dispatch(appendListMealHistory())
     }
 
@@ -26,7 +26,7 @@ const MealHistory = () => {
                     ))
                 }
             </div>
-            <BtnLoadMore onClick={_handleLoadMore} />
+            <BtnLoadMore onClick={handleLoadMore} />
         </MH.Wrap>
     )
 }
